@@ -1,0 +1,33 @@
+.warning {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff4e5;
+    border: 1px solid #ffc107;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.warning h2 {
+    color: #b00020;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.warning p,
+.warning ul {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+img.placeholder {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 24px;
+    font-size: 18px;
+}

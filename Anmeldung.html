@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Passwort zurücksetzen</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(145deg, #e0e7ff, #f0f4ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .reset-box {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .reset-box:hover {
+      transform: scale(1.01);
+    }
+
+    .logo-img {
+      width: 140px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #1f2937;
+      font-size: 24px;
+    }
+
+    p {
+      color: #4b5563;
+      margin-bottom: 25px;
+      font-size: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: border 0.3s;
+    }
+
+    input:focus {
+      border-color: #2563eb;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #2563eb;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #6b7280;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="reset-box">
+    <img src="public/dhbwlogo.png" alt="DHBW Logo" class="logo-img" />
+
+    <h2>Passwort zurücksetzen</h2>
+    <p>Gib deine E-Mail und dein aktuelles Passwort ein, um dein Passwort zurückzusetzen.</p>
+
+    <form onsubmit="event.preventDefault(); window.location.href='Phishing.html';">
+      <input type="email" name="email" placeholder="E-Mail-Adresse" required />
+      <input type="password" name="old-password" placeholder="Aktuelles Passwort" required />
+      <button type="submit">Zurücksetzen</button>
+    </form>
+
+    <div class="footer">
+      <a href="/">Zurück zur Startseite</a>
+    </div>
+  </div>
+</body>
+</html>
