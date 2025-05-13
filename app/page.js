@@ -6,8 +6,8 @@ export default function Home() {
   return (
       <div className="reset-box">
           <Image
-              src="/dhbwlogo.png"
-              alt="DHBW Logo"
+              src="/logo.png"
+              alt="Logo Supersec GmbH"
               width={600}
               height={400}
           />
